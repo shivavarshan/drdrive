@@ -1,0 +1,105 @@
+Microsoft Windows [Version 10.0.22621.2861]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Shiva Varshan>cd..
+
+C:\Users>cd..
+
+C:\>d:
+
+D:\>md expre5
+
+D:\>cd expre5
+
+D:\expre5>git inity
+git: 'inity' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+D:\expre5>git init
+Initialized empty Git repository in D:/expre5/.git/
+
+D:\expre5>git branch shiva
+fatal: not a valid object name: 'master'
+
+D:\expre5>git branch master
+fatal: not a valid object name: 'master'
+
+D:\expre5>git config --global user.name "shivavarshan"
+
+D:\expre5>git config --global user.email "shivavarshan04@gmail.com"
+
+D:\expre5>git branch master
+fatal: not a valid object name: 'master'
+
+D:\expre5>git branch shiva
+fatal: not a valid object name: 'master'
+
+D:\expre5>git checkout shiva
+error: pathspec 'shiva' did not match any file(s) known to git
+
+D:\expre5>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        c1pro.txt
+        c2pro.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\expre5>git branch
+
+D:\expre5>git add *
+
+D:\expre5>git checkout shiva
+error: pathspec 'shiva' did not match any file(s) known to git
+
+D:\expre5>git branch shiva
+fatal: not a valid object name: 'master'
+
+D:\expre5>git branch master
+fatal: not a valid object name: 'master'
+
+D:\expre5>git add -A
+
+D:\expre5>git commit -m "Add feature"
+[master (root-commit) 24f05b0] Add feature
+ 2 files changed, 169 insertions(+)
+ create mode 100644 c1pro.txt
+ create mode 100644 c2pro.txt
+
+D:\expre5>git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+D:\expre5>git branch
+* master
+
+D:\expre5>git branch shiva
+
+D:\expre5>git checkout shiva
+Switched to branch 'shiva'
+
+D:\expre5>git checkout master
+Switched to branch 'master'
+
+D:\expre5>git add .
+
+D:\expre5>git commit -m "Modify main"
+On branch master
+nothing to commit, working tree clean
+
+D:\expre5>git merge master
+Already up to date.
+
+D:\expre5>git log --oneline --graph
+* 24f05b0 (HEAD -> master, shiva) Add feature
+
+D:\expre5>git merge shiva
+Already up to date.
+
+D:\expre5>git log --oneline --graph
+* 24f05b0 (HEAD -> master, shiva) Add feature																																																		
